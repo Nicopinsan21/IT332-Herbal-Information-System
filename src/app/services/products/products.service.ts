@@ -26,6 +26,7 @@ export class ProductsService {
 
   products = [
     {
+      //added by Ma. Chrysel M. Cantos
       id : 1,
       imgurl: 'assets/herbalplants/akapulko.png',
       name: 'Akapulko',
