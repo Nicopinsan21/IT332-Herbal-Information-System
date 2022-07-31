@@ -32,8 +32,8 @@ __________
 To serve in the browser
 ```
 ionic serve --lab
-> :warning: **If you are request to install ionic lab**: Press 'Y'
 ```
+> :warning: **If you are request to install ionic lab**: Press 'Y'
 
 
 #### Add Platforms
