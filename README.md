@@ -11,6 +11,7 @@ Herbal Information System is an ionic application that can find the types of her
 * Slide show pictures
 ___________
 
+<br/>
 ### Usage
 #### Installation
 ________________
@@ -25,6 +26,7 @@ Install the dependencies
 npm install
 ```
 
+<br/>
 #### Serve
 __________
 To serve in the browser
@@ -33,6 +35,7 @@ ionic serve --lab
 > :warning: **If you are request to install ionic lab**: Press 'Y'
 ```
 
+<br/>
 #### Add Platforms
 __________________
 First you need to build the project
@@ -48,6 +51,7 @@ $ ionic capacitor build android
 $ ionic capacitor build ios
 ```
 
+<br/>
 #### Run Platforms
 __________________
 ##### For Android
