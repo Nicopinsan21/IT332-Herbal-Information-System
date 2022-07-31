@@ -19,6 +19,7 @@ Access to directory
 ```
 $ cd IT332-Herbal-Information-System
 ```
+
 Install the dependencies
 ```
 npm install
@@ -28,32 +29,29 @@ npm install
 To serve in the browser
 ```
 ionic serve --lab
----
 > :warning: **If you are request to install ionic lab**: Press 'Y'
+```
 
 #### Add Platforms
 First you need to build the project
 ```
 $ ionic build
 ```
-
 #####For Android
 ```
 $ ionic capacitor build android
 ```
-
 #####For iOS
 ```
 $ ionic capacitor build ios
 ```
 
 #### Run Platforms
-#####For Android
+##### For Android
 ```
 $ npx cap open android
 ```
-
-#####For iOS
+##### For iOS
 ```
 $ npx cap open ios
 ```
