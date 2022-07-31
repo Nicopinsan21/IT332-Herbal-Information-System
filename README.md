@@ -1,7 +1,9 @@
 # Herbal Information System
+___________________________
 Herbal Information System is an ionic application that can find the types of herbal medicine from this app.
 
 ## Features
+___________
 * Splash screen in first opening of the app
 * View the contents of herbal
 * Herbal information can add to your favorites
@@ -9,8 +11,10 @@ Herbal Information System is an ionic application that can find the types of her
 * Can sort alphabetical A - Z, Z - A and Latest Herbal Items
 * Slide show pictures
 
-###*Usage*
+Usage
+_____
 ### Installation
+________________
 Access to directory
 $ cd IT332-Herbal-Information-System
 
