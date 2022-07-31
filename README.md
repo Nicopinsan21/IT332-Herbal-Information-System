@@ -1,3 +1,5 @@
+![HIS logo](https://raw.githubusercontent.com/Nicopinsan21/IT332-Herbal-Information-System/main/src/assets/banner.jpg)
+
 # Herbal Information System
 Herbal Information System is an ionic application that can find the types of herbal medicine from this app.
 
