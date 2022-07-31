@@ -16,5 +16,6 @@ ___________
 ### Installation
 ________________
 Access to directory
-Markup: $ cd IT332-Herbal-Information-System
+
+> $ cd IT332-Herbal-Information-System
 
