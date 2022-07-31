@@ -26,6 +26,7 @@ npm install
 ```
 
 #### Serve
+__________
 To serve in the browser
 ```
 ionic serve --lab
@@ -33,6 +34,7 @@ ionic serve --lab
 ```
 
 #### Add Platforms
+__________________
 First you need to build the project
 ```
 $ ionic build
@@ -47,6 +49,7 @@ $ ionic capacitor build ios
 ```
 
 #### Run Platforms
+__________________
 ##### For Android
 ```
 $ npx cap open android
