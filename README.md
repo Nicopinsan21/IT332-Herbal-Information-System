@@ -17,5 +17,6 @@ ___________
 ________________
 Access to directory
 
-> $ cd IT332-Herbal-Information-System
-
+```
+$ cd IT332-Herbal-Information-System
+```
