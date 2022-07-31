@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      My Favorites
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-gray">
+
+  <div *ngIf="cart.items.length < 1" class="noitem">
+    <img style="width: 100%;" src="assets/images/oopppsfav.png" />
+    <h5>Oops! There's no favorites added</h5>
+  </div>
+
+  <ion-list *ngIf="cart.items.length > 0" class="bg-gray" data-cy="cart-list">
+    <ion-row *ngFor="let product of cart.items;let i = index;" class="rrow" class="ion-no-padding mt-1 bg-white">
+        <ion-col size="3">
+            <img src="{{product.imgurl || 'assets/images/products.svg'}}" style="height: auto;"/>
+        </ion-col>
+        <ion-col size="9">
+            <h4 class="itemt">{{ product?.name }} <span data-cy="rm-item" (click)="cart.removeItem(i)" style="float:right; font-size: 1.4rem;"><ion-icon name="close"></ion-icon></span></h4>
+            <br>
+            <ion-button color="success" expand="full" size="small" (click)="viewHerbalSelected(product)">View</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-list>
+  
+</ion-content>
+
+<!--<ion-footer class="ion-no-border">
+  <ion-toolbar class="bg-gray" *ngIf="cart.items.length > 0">
+    <ion-row class="footer-bar">
+      <ion-col class="p-12-15">
+        <div>
+          <h2 class="heading">Order Info</h2>
+          <p class="mb-1">Total Quantity : {{ cart?.total_cart_qty }}</p>
+          <p class="mt-1">Total Price    : {{ cart?.total_price | currency: 'USD' }}</p>
+        </div>
+        <ion-button mode="ios" color="danger" expand="full" (click)="placeOrder()"> Place Order </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>-->

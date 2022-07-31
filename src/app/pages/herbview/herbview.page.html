@@ -1,0 +1,26 @@
+<ion-header style="background-color: #14CBA8; margin-top: 10%;">
+  <div class="close-boxx">
+    <p class="subnote2 text-align-center" style="text-align: left; position: absolute; margin-left: -10px; margin-top: -8px;">{{ category }}</p>
+    <ion-icon name="close" (click)="dismiss()"></ion-icon>
+  </div>
+</ion-header>
+<ion-content>
+  <div class="modalboxbigz">
+    
+    <ion-img [src]='image'></ion-img>
+    <p class="subnote2 text-align-center" style="font-weight: bold; font-size: 25px; text-align: center; color:black;margin-top: 15px;">{{ name }}</p>
+    <br>
+    <b>Description</b>
+    <p class="subnote2 text-align-center" style="text-indent: 20px; text-align: justify;">{{ description }}</p>
+    <br>
+    <b>Uses & Preparation</b>
+    <p class="subnote2 text-align-center" style="white-space: pre-line; text-align: justify;">{{ usesprep }}</p>
+
+    <br>
+    <br>
+    <ion-footer>
+      <!--<ion-button data-cy="update-cart" expand="full" color="success" class="text-normal" (click)="addToFav()">Rating</ion-button>-->
+    </ion-footer>
+  
+  </div>
+</ion-content>

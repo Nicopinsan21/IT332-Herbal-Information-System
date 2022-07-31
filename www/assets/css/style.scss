@@ -1,0 +1,46 @@
+.font-size-1 {
+    font-size: 1rem;
+}
+
+.text-small {
+    font-size: 0.8rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ion-color-dark {
+    color: var(--ion-color-dark);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-gray {
+    color: gray;
+}
+
+.addtofavorites-modal {
+    --width: 80%;
+    --height: 185px;
+}
+
+.herbalViewer {
+    --width: 150%;
+    --height: 600px;
+}
+
+/* Global modal transparent*/
+.sc-ion-modal-md-h {
+    --background: none;
+}
+.sc-ion-modal-ios-h {
+    --background: none;
+}
+/* End Global modal transparent */

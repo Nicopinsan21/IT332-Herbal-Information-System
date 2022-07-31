@@ -1,0 +1,30 @@
+<ion-header class="ion-no-border border-bottom-gray">
+  <ion-toolbar>
+    <ion-title style="font-size: 1rem;">Filter by</ion-title>
+    <ion-button slot="end" size="small" color="success" class="text-normal text-bold" (click)="dismiss()" style="margin-right: 15px;"> Close </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="cover-filter-page">
+
+  <div class="main-filter-page">
+    <div class="filter-content">
+
+      <div *ngIf="tabs.categories" class="filter-content-item" data-cy="categories-filter">
+        <div class="list-item border-bottom {{ item.isChecked ? 'active' : '' }}" *ngFor="let item of productService.categories; let i = index" (click)="setFilter(i, 'categories')">
+          {{ item?.category }} <ion-icon *ngIf="item.isChecked" name="checkmark-outline" color="success"></ion-icon>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button style="margin-left: 15px;" data-cy="clear-filter" color="success" slot="start" class="text-normal text-bold default-btn btn-link" (click)="clearFilter()"> Clear all </ion-button>
+    
+    <ion-button data-cy="apply-filter" color="success" slot="end" class="text-normal" (click)="applyFilter()" style="margin-right: 15px;"> Apply </ion-button>
+  </ion-toolbar>
+</ion-footer>

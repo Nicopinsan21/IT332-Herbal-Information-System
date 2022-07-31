@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-searchbar mode="ios" (ionChange)="search($event)" debounce="500" style="padding: 16px 0px; width: 90%; margin: 0 auto; --background: rgba(222, 219, 219, 0.45); color:black;"></ion-searchbar>
+    
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-slides style="background: #a9cac5;" pager="true" [options]="slideOpts" *ngIf="bannerImages && bannerImages.length">
+    <ion-slide *ngFor="let image of bannerImages">  
+      <img style="height: 179px; width: 100% auto;" class="banner-image" [src]="image?.imgurl || 'assets/imgs/divisions.svg'"/>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="result-label" *ngIf="productService.show_result_size">
+    <span>{{ productService.products.length }} Results </span> 
+  </div>
+
+  <ion-grid>
+    <p>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content
+        pullingIcon="chevron-down-circle-outline"
+        refreshingSpinner="circles">
+      </ion-refresher-content>
+    </ion-refresher>
+    </p>
+
+    <ion-row style="margin-left: 10px;margin-right: 10px;" class="ion-justify-content-between ion-padding-vertical">
+      <ion-col size="4">
+        <div class="font-bold">
+          Herbals
+        </div>
+      </ion-col>
+      <ion-col size="6" class="ion-text-right">
+        <ion-icon name="funnel-outline" class="ion-padding-horizontal" (click)='sortProducts()'></ion-icon>
+        <ion-icon data-cy="filter-btn" name="filter{{ productService.isFiltered() ? '' : '-outline' }}" (click)='filterPage()'></ion-icon>
+      </ion-col>
+    </ion-row>
+
+    
+    <ion-row data-cy="products-list">
+      <ion-col size="6" size-lg="3" size-md="4" *ngFor='let product of productService.products'>
+        <ion-card class="ion-no-margin">
+          <img style="height: 125px; width: 225px;" [src]="product?.imgurl || 'assets/imgs/divisions.svg'">
+          <ion-card-header>
+            <ion-card-subtitle>{{ product?.category }}</ion-card-subtitle>
+            <ion-card-title class="font-size-1">{{ product?.name }}</ion-card-title>
+            
+          </ion-card-header>
+          <ion-card-content>
+            <div>
+              <ion-button style="text-transform: capitalize;" color="success" expand="block" size="small" (click)="viewHerbalSelected(product)">View</ion-button>
+              
+              <ion-button style="text-transform: capitalize;" class="btnFav" data-cy="cart-btn" expand="block" size="small" (click)="addToFavModal(product)">
+              {{ cart.isAddedToCart(product?.id) ? 'Added' : 'Add to Favorites' }}
+            </ion-button></div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <div *ngIf="productService.products && productService.products.length === 0" class="noitem">
+        <img src="assets/images/search-icon.svg" />
+        <h1 style="color:rgb(85, 85, 85);">No results found</h1>
+        <h1>Try different or more general keywords</h1>
+      </div>
+    </ion-row>
+  </ion-grid>
+</ion-content>
