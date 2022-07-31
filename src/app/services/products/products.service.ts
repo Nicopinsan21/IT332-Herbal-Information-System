@@ -173,7 +173,9 @@ export class ProductsService {
       category: 'Dry Leaves',
       description:'RUVA, Purple ( Ekke, Rui,arka ) Calotropis gigantea \n\n  is a perennial shrub growing 2.5 meter high with various branches and sub branches. Leaves are simple, opposite, sub sessile, ovate and cordate at base. It has bunch of waxy flowers that are white or lavender in color. Flowers consists of pointed five petals and a small beautiful crown, which holds the stamen. It has milky stem and contains cardiac glycosides, fatty acid and calcium oxalate.',
       usesprep:'\u2022 Used for fomentation to paining joints \n\n \u2022 After the plant is cut let it dry in the sun for a day or two. This facilitates easy peeling of the green skin of the stem. Flatten and wash it clean, which makes it white. Then separate out fine thin threads from it. This itself is its thread. As this thread does not easily rot in water it is used as a string in fishing tackle.'
-    }, {
+    }, 
+    //Added by Charmaine Valdez
+    {
       id : 22,
       imgurl: 'assets/dryleaves/Lemon Balm.jpg',
       name: 'Lemon Balm',
