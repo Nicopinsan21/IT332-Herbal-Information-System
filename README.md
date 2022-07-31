@@ -26,7 +26,7 @@ Install the dependencies
 npm install
 ```
 
-<br>
+
 #### Serve
 __________
 To serve in the browser
