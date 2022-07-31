@@ -9,7 +9,7 @@ Herbal Information System is an ionic application that can find the types of her
 * Can select categories in filter by icon
 * Can sort alphabetical A - Z, Z - A and Latest Herbal Items
 * Slide show pictures
-___________
+
 
 
 ### **Usage**
