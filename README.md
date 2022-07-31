@@ -37,11 +37,11 @@ First you need to build the project
 ```
 $ ionic build
 ```
-#####For Android
+##### For Android
 ```
 $ ionic capacitor build android
 ```
-#####For iOS
+##### For iOS
 ```
 $ ionic capacitor build ios
 ```
