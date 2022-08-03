@@ -364,14 +364,19 @@ export class ProductsService {
         }
       });
       console.log({NotFoundInCategory});
-
-      let foundInPrice = NotFoundInCategory.map(item => {
+      
+      let NotFoundInDesc = NotFoundInName.map(item => {
         if (item) {
-          if ( `${item.price}`.toLocaleLowerCase().indexOf(term.toLocaleLowerCase()) > -1 ) {
+          if ( item.description.toLocaleLowerCase().indexOf(term.toLocaleLowerCase()) < 0 ) {
+            return item;
+          } else {
             this.products.push(item);
           }
         }
       });
+      console.log({NotFoundInDesc});
+      
+      
     } else {
       this.products = this.allProducts;
     }
