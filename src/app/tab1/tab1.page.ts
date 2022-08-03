@@ -26,7 +26,7 @@ export class Tab1Page {
   };
 
   bannerImages: any = [];
-  //searchTerm: string;
+  searchTerm: string;
 
   
 
