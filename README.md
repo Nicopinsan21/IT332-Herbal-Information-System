@@ -28,7 +28,7 @@ $ cd IT332-Herbal-Information-System
 
 Install the dependencies
 ```
-npm install
+$ npm install
 ```
 
 __________
@@ -36,7 +36,7 @@ __________
 __________
 To serve in the browser
 ```
-ionic serve --lab
+$ ionic serve --lab
 ```
 > :warning: **If you are request to install ionic lab**: Press 'Y'
 
