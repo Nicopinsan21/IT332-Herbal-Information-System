@@ -365,17 +365,6 @@ export class ProductsService {
       });
       console.log({NotFoundInCategory});
       
-      let NotFoundInDesc = NotFoundInName.map(item => {
-        if (item) {
-          if ( item.description.toLocaleLowerCase().indexOf(term.toLocaleLowerCase()) < 0 ) {
-            return item;
-          } else {
-            this.products.push(item);
-          }
-        }
-      });
-      console.log({NotFoundInDesc});
-      
       
     } else {
       this.products = this.allProducts;
